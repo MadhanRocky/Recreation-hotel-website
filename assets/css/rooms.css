@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing Script');
+
+:root{
+  --brown: rgba(124, 106, 70, 1)
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "Raleway", sans-serif !important;
+    /* background-color: rgb(228, 131, 11); */
+}
+
+.container{
+   width: 80%;
+  margin: 0 auto;
+  background-color: white;
+}
+/* .main{
+    margin: 5rem;
+    padding: 0 2rem;
+} */
+
+/* Navigation */
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-bar ul{
+ display: flex;
+ list-style: none;
+ padding: 0;
+gap:3rem;
+font-weight: 550;
+}
+
+.nav-bar ul li:nth-child(3){
+    color: var(--brown);
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+  .nav-bar ul li:hover {
+    color: var(--brown);
+  }
+.nav-button button{
+    width: 165px;
+    height: 55px;
+    background-color: var(--brown);
+    color: whitesmoke ;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+}
+
+
+/* home-screen */
+
+.home-screen{
+    position: relative;
+    height: 90vh;
+    /* width: 100%; */
+    background-image: url(../images/homePage-bgImage.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    z-index: 1;
+}
+.home-screen span{
+    position: absolute;
+    background-color: var(--brown);
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    z-index: 3;
+}
+.home-screen-content{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* color: whitesmoke; */
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    z-index: 4;
+    gap: 4rem;
+}
+
+.home-screen-content h1, .home-screen-content p,.home-screen-content button, .home-screen-content i, .fa-arrow-down{
+    z-index: 999;
+}
+
+
+.home-screen-content button{
+    border: 2px solid whitesmoke;
+    border-radius: 24px;
+    height: 90px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+.fa-arrow-down{
+  color: whitesmoke;
+}
+
+
+/* rooms-card */
+
+.rooms-card{
+    position: relative;
+    /* display: flex; */
+    padding: 4.5rem 3.5rem;
+    background-color: white;
+    color: var(--brown);
+}
+.rooms-card-01, .rooms-card-02{
+    display: flex;
+    gap: 3rem;
+
+}
+.rooms-card-01{
+    padding-bottom: 2rem;
+}
+.card{
+    position: relative;
+    background-color: whitesmoke;
+    box-shadow: 2px 3px 3px 0 rgba(0,0,0,.3);
+
+}
+.room{
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+.room img{
+    width: 100%;
+}
+.room-details{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.room-details hr {
+    color: var(--brown);
+}
+.room-nam{
+    display: flex;
+    flex-direction: column;
+}
+.room-type{
+    display: flex;
+    justify-content: space-between;
+}
+.room-facility{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+}
+.room-facility-icons ul li {
+    list-style-type: none;
+    padding: 0;
+    border: 3px solid rgba(242, 242, 242, 1);
+    border-radius: 3px  ;
+ }
+.room-facility-icons ul {
+display: flex;
+justify-content: space-evenly;
+padding: 0;
+gap: 1.5rem;
+}
+.room-facility button{
+    width: 143px;
+    height: 47px;
+    background-color: var(--brown);
+    color: whitesmoke ;
+    align-items: center;
+    /* display: flex;
+    justify-content: space-around; */
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+/* footer */
+
+.footer {
+    background-color: var(--brown);
+    color: whitesmoke;
+    /* padding-bottom: 4rem; */
+    /* margin: 4rem; */
+  }
+  .footer-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    /* text-align: justify; */
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+  
+    line-height: normal;
+  }
+  .footer-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .footer-content span {
+    font-family: "Dancing Script";
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .footer-content p {
+    text-align: justify;
+  }
+  .footer-navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 19px;
+  }
+  .footer-navbar li {
+  }
+  
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+  .subscribe-button {
+    background-color: whitesmoke;
+    color: rgb(181, 176, 169);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    width: 360px;
+    height: 50px;
+    align-items: center;
+    border-radius: 4px;
+  }
+  .subscribe-button button {
+    width: 111px;
+    height: 40px;
+    background-color: var(--brown);
+    color: whitesmoke;
+    border: none;
+    /* border-radius: 3.5px; */
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  
