@@ -33,6 +33,9 @@ body{
     align-items: center;
     padding: 1rem 0;
 }
+.navigation-mobile{
+  display: none;
+}
 
 .nav-bar ul{
  display: flex;
@@ -50,7 +53,7 @@ font-weight: 550;
 /* .nav-bar > li:nth-child(1) {
     color: var(--brown);
   } */
-  #current{
+  #current > a{
     color: var(--brown);
   }
 .nav-bar > ul > li > a:hover {
@@ -112,11 +115,13 @@ font-weight: 550;
     justify-content: space-around;
     gap: 2rem;
     width: 100%;
-    padding: 2rem 5rem;
+    padding: 4rem 5rem;
+    align-items: center;
 }
 .contact-details01{
     display: flex;
     justify-content: space-between;
+    gap: 82px;
 }
 .contact-details02{
   display: flex;
@@ -129,16 +134,25 @@ font-weight: 550;
     gap: 10px;
 }
 .Name input , .Email input{
-    width: 32vw;
+  width: 27vw;
     height: 8vh;
     border: 0.5px solid #918d8d;
     
 }
 .contact-details02 input{
-    width:100%;
-height: 50vh;
-border: 0.5px solid #918d8d;
+  width: 60vw;
+  height: 30vh;
+  border: 0.5px solid #918d8d;
+  padding-bottom: 150px;
 
+}
+#submit{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#submit button{
+  border-radius: 3px;
 }
 
 
@@ -166,14 +180,14 @@ border: 0.5px solid #918d8d;
   color: whitesmoke;
   /* padding-bottom: 4rem; */
   /* margin: 4rem; */
-  padding: 2rem;
+  padding: 1rem;
 }
 .footer-details {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 5rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
   color: #fff;
   /* text-align: justify; */
   font-family: Raleway;
@@ -196,13 +210,14 @@ border: 0.5px solid #918d8d;
 }
 .footer-content span {
   font-family: "Dancing Script";
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.5rem;
   font-size: 30px;
 }
 .footer-content p {
   text-align: justify;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
 }
 .footer-navbar ul {
   list-style-type: none;
@@ -210,18 +225,23 @@ border: 0.5px solid #918d8d;
   display: flex;
   flex-direction: column;
   /* align-items: flex-start; */
-  gap: 19px;
+  gap: 9px;
 }
 .footer-navbar > span {
-  font-size: 15px;
+  font-size: 11.5px;
+  font-weight: 700;
 }
-.footer-navbar > li{
-  font-size: 12px;
+.footer-navbar > ul > li{
+  font-size: 10px;
+  font-weight: 700;
+  padding: 0 12px;
 }
 .subscribe {
   display: flex;
   flex-direction: column;
   gap: 19px;
+  font-size: 14px;
+  font-weight: 700;
 }
 .subscribe-button {
   background-color: whitesmoke;
@@ -246,4 +266,129 @@ border: 0.5px solid #918d8d;
   display: flex;
   justify-content: space-around;
   padding-top: 2rem;
+}
+
+  /* new css media quries sizes */
+/* Mobile */
+@media  only screen and (min-width: 320px) and  (max-width:600px)  {
+  /* Styles for mobile devices */
+
+  /* Navigation  */
+/* .dropdwn{
+  display: ;
+  background-color: rgba(242, 242, 242, 1);
+  color: var(--brown);
+  font-size: 25px;
+  border: ;
+  cursor: pointer;
+}
+
+.nav-bar{
+  position: relative;
+  display: inline-block;
+}
+.nav-bar ul{
+  gap:16px
+}
+
+.nav-button button, .home-page-nav-button > button{
+  width: 120px;
+  height: 40px;
+}
+.dropdwn-list{
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 99;
+  flex-direction: column;
+ 
+}
+.dropdwn-list a{
+  padding: 12px 16px;
+  display: block;
+}
+.dropdwn-list a:hover{
+  background-color: whitesmoke;
+}
+.nav-bar:hover .dropdwn-list{
+display: block;
+}
+.nav-bar:hover .dropdwn{
+background-color: #00a699;
+} */
+
+.navigation{
+  display: none;
+}
+.navigation-mobile{
+  display: block;
+  gap: 10px;
+  display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.navigation-mobile-header{
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+}
+.navigation-mobile-footer{
+}
+.nav-bar ul {
+  justify-content: space-evenly;
+
+}
+.nav-button button {
+  width: 130px;
+  height: 45px;
+}
+
+.home-screen-content{
+  text-align: center;
+}
+
+
+/* footer  */
+
+.footer-navbar{
+  display: none;
+}
+.footer-details{
+  padding: 1rem 0rem;
+  flex-direction: column;
+
+}
+.subscribe-button{
+  width: 258px;
+}
+
+}
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* Styles for tablet devices */
+}
+/* .navigation-mobile{
+  display: none;
+} */
+
+/* footer  */
+
+.footer-navbar{
+  display: none;
+}
+.footer-details{
+  padding: 1rem 0rem;
+}
+.subscribe-button{
+  width: 258px;
+}
+
+/* Laptop & other L- screen devices */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+   /* Styles for Laptop & other L- screen devices */
+   /* .navigation-mobile{
+    display: none;
+  } */
 }
