@@ -16,7 +16,7 @@ body{
 }
 
 .container{
-   width: 80%;
+   width: 100%;
    margin: 0 auto;
     background-color: white;
 }
@@ -29,7 +29,7 @@ body{
 
 .navigation{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 15vh;
 }
@@ -42,16 +42,19 @@ gap:3rem;
 font-weight: 550;
 }
 
-.nav-bar ul li a:nth-child(1){
-    color: var(--brown);
+.nav-bar > ul > li > a {
+  text-decoration: none;
+  color: black;
+  
 }
-
-.nav-bar ul li a{
-    text-decoration: none;
-    color: black;
-}
-.nav-bar ul li a:hover{
+/* .nav-bar > li:nth-child(1) {
     color: var(--brown);
+  } */
+  #current{
+    color: var(--brown);
+  }
+.nav-bar > ul > li > a:hover {
+  color: var(--brown);
 }
 .nav-button button{
     width: 165px;
@@ -81,7 +84,7 @@ font-weight: 550;
 
 
 
-/* cntainer-body */
+/* container-body */
 
 .container-body{
     /* position: relative; */
@@ -95,6 +98,9 @@ font-weight: 550;
 .container-body01, .container-body02, .container-body03 {
     position: relative;
     margin: 2rem 0;
+}
+.container-body03{
+  margin-bottom: 4rem;
 }
 .rooms-card{
  /* background-image: url( "./assets/images/explore-room.svg" );   */
@@ -153,81 +159,88 @@ font-weight: 550;
 /* footer */
 
 .footer {
-    background-color: var(--brown);
-    color: whitesmoke;
-    /* padding-bottom: 4rem; */
-    /* margin: 4rem; */
-  }
-  .footer-details {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5rem;
-    padding: 1rem 2rem;
-    color: #fff;
-    /* text-align: justify; */
-    font-family: Raleway;
-    font-size: 10px;
-    font-style: normal;
-  
-    line-height: normal;
-  }
-  .footer-navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-  }
-  .footer-content span {
-    font-family: "Dancing Script";
-    font-weight: 500;
-    font-size: 1.5rem;
-  }
-  .footer-content p {
-    text-align: justify;
-  }
-  .footer-navbar ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-start; */
-    gap: 19px;
-  }
-  .footer-navbar li {
-  }
-  
-  .subscribe {
-    display: flex;
-    flex-direction: column;
-    gap: 19px;
-  }
-  .subscribe-button {
-    background-color: whitesmoke;
-    color: rgb(181, 176, 169);
-    display: flex;
-    justify-content: space-between;
-    padding: 0.2rem;
-    width: 360px;
-    height: 50px;
-    align-items: center;
-    border-radius: 4px;
-  }
-  .subscribe-button button {
-    width: 111px;
-    height: 40px;
-    background-color: var(--brown);
-    color: whitesmoke;
-    border: none;
-    /* border-radius: 3.5px; */
-  }
-  .footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-  }
+  background-color: var(--brown);
+  color: whitesmoke;
+  /* padding-bottom: 4rem; */
+  /* margin: 4rem; */
+  padding: 2rem;
+}
+.footer-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  /* text-align: justify; */
+  font-family: Raleway;
+  /* font-size: 10px; */
+  font-style: normal;
+
+  line-height: normal;
+}
+.footer-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.footer-content span {
+  font-family: "Dancing Script";
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-size: 30px;
+}
+.footer-content p {
+  text-align: justify;
+  font-size: 12px;
+}
+.footer-navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 19px;
+}
+.footer-navbar > span {
+  font-size: 15px;
+}
+.footer-navbar > li{
+  font-size: 12px;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.subscribe-button {
+  background-color: whitesmoke;
+  color: rgb(181, 176, 169);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+  width: 360px;
+  height: 50px;
+  align-items: center;
+  border-radius: 4px;
+}
+.subscribe-button button {
+  width: 111px;
+  height: 40px;
+  background-color: var(--brown);
+  color: whitesmoke;
+  border: none;
+  /* border-radius: 3.5px; */
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
