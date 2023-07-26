@@ -410,28 +410,30 @@ i.fa-solid.fa-play {
   .footer-details {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    gap: 5rem;
+    align-items: flex-start;
+    /* gap: 5rem; */
     padding: 1rem;
     color: #fff;
     /* text-align: justify; */
     font-family: Raleway;
     /* font-size: 10px; */
     font-style: normal;
-  
+   width: 100%;
     line-height: normal;
   }
   .footer-navbar {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+    /* align-items: flex-start; */
+    gap: 1rem;
+    /* width: 30%; */
   }
   .footer-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
+    width: 30%;
   }
   .footer-content span {
     font-family: "Dancing Script";
@@ -450,18 +452,20 @@ i.fa-solid.fa-play {
     display: flex;
     flex-direction: column;
     /* align-items: flex-start; */
-    gap: 9px;
+    gap: 12px;
   }
   .footer-navbar > span {
-    font-size: 11.5px;
+    font-size: 15px;
     font-weight: 700;
   }
   .footer-navbar > ul > li{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
-    padding: 0 12px;
+    /* padding: 0 12px; */
   }
   .subscribe {
+    width: 30%;
+
     display: flex;
     flex-direction: column;
     gap: 19px;
@@ -491,6 +495,13 @@ i.fa-solid.fa-play {
     display: flex;
     justify-content: space-around;
     padding-top: 2rem;
+  }
+  .footer-body{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 100%;
+    justify-content: space-evenly;
   }
 
   /* new css media quries sizes */
@@ -558,7 +569,8 @@ i.fa-solid.fa-play {
 .navigation-mobile-footer{
 }
 .nav-bar ul {
-  justify-content: space-evenly;
+  justify-content: space-between;
+  gap: 0;
 
 }
 .nav-button button {
@@ -591,7 +603,12 @@ display: none;
 .home-page-nav{
   bottom: 70px;
   padding: .2rem 0rem;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 93%;
+}
+.home-page-nav-button > button{
+  width: 145px;
+  height: 50px;
 }
 
 /* facilities */
@@ -657,6 +674,22 @@ display: none;
   .subscribe-button{
     width: 258px;
   }
+  .footer-content{
+    width: 100%;
+  }
+  .subscribe{
+    width: 100%;
+    gap:10px;
+    padding-top: 12px;
+  }
+  .footer-content{
+    width: 100%;
+  }
+  .subscribe{
+    width: 100%;
+    gap:10px;
+    padding-top: 12px;
+  }
 
 } 
 /* Tablet */
@@ -697,8 +730,24 @@ flex-direction: column;
 
  /* footer */
  
- .footer-navbar{
+ 
+ .footer-body{
   display: none;
+}
+.footer-details{
+  padding: 1rem 0rem;
+  gap: 33px
+}
+.subscribe-button{
+  width: 258px;
+}
+.footer-content{
+  width: 50%;
+}
+.subscribe{
+  width: 50%;
+  gap:10px;
+  padding-top: 12px;
 }
   
 }
